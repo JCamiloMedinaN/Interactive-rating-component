@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive rating component</title>
+</head>
+
+<body>
+    <div class="card" id="card">
+        <div class="icon">
+            <img src="./img/icon-star.svg" alt="icon star">
+        </div>
+        <h2 class="title">How did we do?</h2>
+        <p class="description">Please let us know how we did width your support
+            request. All feedback is appreciated to help us
+            improve our offering!</p>
+        <div class="score">
+            <button id="btn-score" class="number">1</button>
+            <button id="btn-score" class="number">2</button>
+            <button id="btn-score" class="number">3</button>
+            <button id="btn-score" class="number">4</button>
+            <button id="btn-score" class="number">5</button>
+        </div>
+        <div class="btn-submit">
+            <button type="submit" id="submit-btn" value="enviar">SUBMIT</button>
+        </div>
+    </div>
+
+    <div class="card-thankyou">
+        <img class="thankyou-img" src="./img/illustration-thank-you.svg" alt="thankyou">
+        <div class="result-score">You selected <span class="score-number">4</span> out of 5</div>
+        <h2 class="thankyou-title">Thank you!</h2>
+        <p class="thankyou-description">We appreciate you taking the time to give a rating.
+            If you ever need more support, don't hesitate to
+            get in touch!</p>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,400&family=Mouse+Memoirs&family=Ubuntu:wght@400;700&display=swap');
+
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 24%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card, .card-thankyou{
+    background-color: var(--Dark-Blue);
+    width: 327px;
+    height: 364px;
+    border-radius: 1rem;
+    padding: 1.2rem;
+}
+
+.icon, #btn-score{
+    background-color: var(--Medium-Grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 1rem;
+}
+
+.title, .thankyou-title{
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+.description, .thankyou-description{
+    color: var(--Light-Grey);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.5px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.number {
+    cursor: pointer;
+    border: none;
+}
+
+#btn-score:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+#btn-score:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+#submit-btn{
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--Orange);
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--White);
+    height: 2.7rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+#submit-btn:hover{
+    color: var(--Orange);
+    background-color: var(--White)
+}
+
+/*------------------card thankyou-----------------*/
+.card-thankyou{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thankyou-img{
+    width: 150px;
+    margin-bottom: 24px;
+}
+
+.result-score{
+    background-color: var(--Medium-Grey);
+    width: 170px;
+    height: 36px;
+    border-radius: 1rem;
+    color: var(--Orange);
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+}
+
+.thankyou-description{
+    text-align: center;
+}
+
+/*---------------Desktop----------------------------*/
+@media (min-width:600px){
+    .card, .card-thankyou{
+        width: 412px;
+        height: 412px;
+        padding: 34px;
+    }
+
+    .icon, #btn-score{
+        background-color: var(--Medium-Grey);
+        width: 50px;
+        height: 50px;
+    }
+
+    .title, .thankyou-title{
+        font-size: 1.8rem;
+    }
+
+    .description, .thankyou-description{
+        font-size: 1.2rem;
+    }
+
+    .result-score{
+        font-size: 1rem;
+        width: 196px;
+    }
+}
+
+
+/*1h:34min:35eg*/
+
