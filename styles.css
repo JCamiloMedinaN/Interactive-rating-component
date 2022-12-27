@@ -110,7 +110,7 @@ body {
 .result-score{
     background-color: var(--Medium-Grey);
     width: 170px;
-    height: 36px;
+    height: 20px;
     border-radius: 1rem;
     color: var(--Orange);
     text-align: center;
